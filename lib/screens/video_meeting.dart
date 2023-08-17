@@ -79,6 +79,7 @@ class _VideoMeetingScreenState extends State<VideoMeetingScreen> {
       appBar: AppBar(
         title: Text("Meeting ID: ${widget.channelName}"),
         centerTitle: true,
+        elevation: 0,
       ),
       body: SafeArea(
         child: _loading

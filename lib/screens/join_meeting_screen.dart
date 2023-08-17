@@ -5,7 +5,6 @@ import '../resources/auth_methods.dart';
 import '../utils/colors.dart';
 
 class JoinMeetingScreen extends StatefulWidget {
-  // const JoinMeetingScreen({Key? key}) : super(key: key);
   // String channelName;
   // JoinMeetingScreen({required this.channelName});
 
@@ -17,9 +16,6 @@ class _JoinMeetingScreenState extends State<JoinMeetingScreen> {
   final AuthMethods _authMethods = AuthMethods();
   late TextEditingController meetingIdController;
   late TextEditingController nameController;
-  // final JitsiMeetMethods _jitsiMeetMethods = JitsiMeetMethods();
-  bool isAudioMuted = true;
-  bool isVideoMuted = true;
 
   @override
   void initState() {
@@ -35,7 +31,6 @@ class _JoinMeetingScreenState extends State<JoinMeetingScreen> {
     super.dispose();
     meetingIdController.dispose();
     nameController.dispose();
-    // JitsiMeet.removeAllListeners();
   }
 
   @override
